@@ -4,6 +4,7 @@ body {
   flex-direction: column;
   height: 100vh;
   overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 #header {
@@ -33,7 +34,7 @@ body {
 .container {
   display: flex;
   flex-grow: 1;
-  height: 834px;
+  height: calc(100vh - 90px);
   overflow: hidden;
 }
 
