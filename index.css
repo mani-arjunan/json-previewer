@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+#header {
+  background-color: #935454;
+  color: white;
+  font-size: 30px;
+  padding: 10px;
+  height: 40px;
+  font-family: monospace;
+  width: 100%;
+  z-index: 1;
+  text-align: center;
+}
+
+#footer {
+  background-color: #935454;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  height: 30px;
+  line-height: 30px;
+  font-family: monospace;
+  width: 100%;
+  z-index: 1;
+}
+
+.container {
+  display: flex;
+  flex-grow: 1;
+  height: 834px;
+  overflow: hidden;
+}
+
+#json-input {
+  padding-top: 20px;
+  padding-left: 20px;
+  border: none;
+  width: 50%;
+  overflow-y: auto;
+}
+
+#divider {
+  width: 5px;
+  background-color: #c87a7a;
+  cursor: ew-resize;
+  position: relative;
+}
+
+#json-output {
+  padding: 20px;
+  width: 50%;
+  overflow-y: auto;
+}
+
+.depth {
+  cursor: pointer;
+  padding: 0 3px 0 3px;
+  margin: 0 3px 0 3px;
+  background-color: black;
+  color: white;
+  font-size: 18px;
+  font-family: monospace;
+  font-weight: bold;
+}
+
+.key {
+  font-weight: bold;
+  color: red;
+  font-size: 20px;
+  font-family: monospace;
+}
+
+.value {
+  font-weight: bold;
+  color: green;
+  font-size: 20px;
+  font-family: monospace;
+}
+
+.close {
+  display: none;
+}
+
+.close>.children {
+  display: none;
+}
